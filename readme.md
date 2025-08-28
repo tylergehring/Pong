@@ -51,7 +51,18 @@ This project is a simple Pong game built in Unity using C#. It features a player
 
 ---
 
+
 ## 4. Running the Game
+
+### Option 1: Play the Executable
+
+If you downloaded a release or clone that includes a `Pong.exe` (or similar) file:
+
+1. Open the build folder in your file explorer.
+2. Double-click the `.exe` file to launch the game—no Unity installation required.
+3. Use the controls below to play.
+
+### Option 2: Run from Unity Editor
 
 1. Press the **Play** button in Unity to start the game.
 2. Use the controls below to play.
