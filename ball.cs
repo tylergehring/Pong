@@ -20,10 +20,14 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("left-wall"))
         {
+            if (ScoreManager.Instance != null)
+                ScoreManager.Instance.AddComputerScore();
             ResetPosition();
         }
         if (collision.gameObject.CompareTag("right-wall"))
         {
+            if (ScoreManager.Instance != null)
+                ScoreManager.Instance.AddPlayerScore();
             ResetPosition();
         }
     }
