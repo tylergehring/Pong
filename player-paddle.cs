@@ -27,6 +27,12 @@ public class PlayerPaddle : Paddle
     {
         float move = moveAction.ReadValue<float>();
         _direction = new Vector2(0, move);
+
+        // Allow quitting the application with Escape key (Input System)
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            Application.Quit();
+        }
     }
 
     private void FixedUpdate()
